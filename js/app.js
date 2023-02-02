@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('.btn')
-const URL = '../data.json'
+// const URL = '../data.json'
+const URL = 'https://fakestoreapi.com/products'
 var allArray = []
 
 // Fetch The Data
