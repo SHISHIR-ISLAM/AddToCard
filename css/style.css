@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 2rem;
+}
+
+/* nav  */
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 3.5rem 0;
+}
+
+nav {
+  background: rgb(71, 154, 255);
+  padding: 0 2rem;
+}
+
+nav h1 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* search-box */
+.search-box {
+  margin: 7rem 0 0;
+  text-align: center;
+}
+
+.search-box input {
+  padding: 1rem;
+  outline: none;
+  width: 50%;
+  border: none;
+  font-size: 1.9rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+.search-box input::placeholder {
+  font-size: 1.8rem;
+  color: #777;
+}
+
+.card-bag i {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.card-bag {
+  position: relative;
+  padding: 1rem 3.5rem;
+  background: rgb(60, 59, 59);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.card-bag span {
+  position: absolute;
+  top: -0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.main {
+  padding-top: 7rem;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15rem, auto));
+  gap: 3rem;
+}
+
+main img {
+  width: 100%;
+  height: 20rem;
+  object-fit: contain;
+}
+
+main .card {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+main .card-body {
+  padding: 2.3rem 1.5rem;
+}
+
+main button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgb(78, 78, 78);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* root */
+.root {
+  position: fixed;
+  min-height: 100vh;
+  overflow-y: scroll;
+  right: -100%;
+  top: 0;
+  width: 35rem;
+  z-index: 50;
+  background: #f1f1f1;
+  padding: 3rem 4.5rem;
+}
+.root.active {
+  right: 0;
+}
+.bag-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 3rem;
+}
+.card-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-inner img {
+  object-fit: contain;
+}
+
+.bag-box img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.heading {
+  padding: 3rem 2.7rem;
+  text-align: center;
+  color: #333;
+  font-size: 2.2rem;
+}
+
+.total {
+  margin-top: 2.5rem;
+  border-top: 2px solid #333;
+  text-align: right;
+}
+
+.remove {
+  border: none;
+  color: rgb(255, 40, 40);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.times {
+  font-size: 3.7rem;
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  text-decoration: none;
+}
+
+.price {
+  color: rgb(255, 39, 39);
+}
+
+.card-title {
+  color: rgb(59, 59, 59);
+  margin-bottom: 0.3rem;
+}
+
+/* button-group  */
+.button-group {
+  padding: 3rem 1rem 5rem;
+  text-align: center;
+}
+
+.button-group .btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0.7rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+/* card-inner */
+.card-inner-overly {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #ccc;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.card-inner-overly.active {
+  display: block;
+}
+
+.card-inner-body {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.card-inner-body .button {
+  padding: 0.7rem 2rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: rgb(86, 86, 86);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.card-inner-body .container {
+  background: #fff;
+  padding: 0;
+}
+.card-inner-body-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 3rem;
+  padding: 1rem 0 3rem;
+}
+
+.card-inner-body-content div h1 {
+  font-size: 2.7rem;
+  color: #555;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: .5rem;
+}
+.card-inner-body-content div h2 {
+  font-size: 2.5rem;
+  color: #666;
+  text-transform: capitalize;
+  margin: .5rem 0;
+}
+.card-inner-body-content div p {
+  font-size: 1.7rem;
+  letter-spacing: .7px;
+  color: #777;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.add-to-card {
+  padding: .7rem 1.5rem;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background: #777;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.add-to-card:hover {
+  background: rgb(191, 186, 186);
+}
+.card-inner-body-content img {
+  width: 40rem;
+  max-height: 40rem;
+  border-radius: .8rem;
+  -webkit-border-radius: .8rem;
+  -moz-border-radius: .8rem;
+  -ms-border-radius: .8rem;
+  -o-border-radius: .8rem;
+  object-fit: contain;
+}
+
+.card-inner-body-content p {
+  max-width: 40rem;
+}
+
+/* media */
+
+@media (max-width: 980px) {
+  html {
+    font-size: 58%;
+  }
+  main .container {
+    grid-template-columns: repeat(2, minmax(15rem, auto));
+  }
+}
+@media (max-width: 668px) {
+  html {
+    font-size: 55%;
+  }
+  main .container {
+    grid-template-columns: repeat(1, minmax(15rem, 50rem));
+    justify-content: center;
+  }
+}

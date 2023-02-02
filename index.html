@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add To Card Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Ecommerces</h1>
+        <div class="card-bag">
+          <i class="fa-solid fa-bag-shopping card-box fa-2x"></i>
+          <span class="count">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <article class="search-box">
+      <form>
+        <input type="text" placeholder="search products..." class="search" />
+      </form>
+    </article>
+
+    <div class="root">
+      <a class="times" href="#">&times;</a>
+      <h1 class="heading">Your Card</h1>
+      <div class="bag-box"></div>
+      <h2 class="total"></h2>
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <div class="card"></div>
+      </div>
+    </main>
+
+    <div class="container">
+      <article class="button-group">
+        <button class="btn page0">1</button>
+        <button class="btn page1">2</button>
+        <button class="btn page2">3</button>
+        <button class="btn page3">4</button>
+      </article>
+    </div>
+
+    <div class="card-inner-overly">
+      <div class="card-inner-body">
+       <div class="container">
+         <div class="button"><i class="fa-solid fa-chevron-left"></i> Back To All Plans</div>
+         <div class="card-inner-body-content">
+          <img src="https://www.imgacademy.com/sites/default/files/2022-07/img-homepage-meta.jpg" alt="card-images">
+          <div>
+            <h1>Heading</h1>
+            <p class="lead">Cetagory</p>
+
+            <h2 class="card-price">$50</h2>
+          <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla repellat expedita alias, doloribus iusto.</p>
+
+          <button class="add-to-card">Add To Card</button>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
